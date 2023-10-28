@@ -13,7 +13,7 @@ var playerArcherLife = 3;
 var computerArcherLife = 3;
 var computerCollision
 function preload() {
-  backgroundImg = loadImage("./assets/background.gif");
+  backgroundImg = loadImage("background.gif");
 }
 
 function setup() {
@@ -184,8 +184,6 @@ function handlePlayerArrowCollision() {
 
       /**Update the code here so that computer life 
       reduces if player's arrow hits the target***/
-      playerArcherLife -= 1;
-      player.reduceLife(playerArcherLife);
       computerArcherLife -= 1;
       computer.reduceLife(computerArcherLife);
       
